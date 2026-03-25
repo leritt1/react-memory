@@ -17,7 +17,7 @@ function App() {
       <Route path='/game' element={<PageGame />} />
       <Route path='/images' element={<PageImages /> } >
         <Route path='list' element={<List />} />
-        <Route path='item' element={<Item />} />
+        <Route path='item/:id' element={<Item />} />
       </Route>
       <Route path='*' element={<Page404/>}  />
     </Routes>
