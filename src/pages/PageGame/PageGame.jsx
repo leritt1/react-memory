@@ -21,29 +21,29 @@ export default function PageGame ()
     
 
     return (
-        <div className='container'>
-        <Header />
-          <main>
-            <div className="steps">{stepsCount}</div>
-
-            <Grid
-            images = {images}
-            finishedItems = {finishedItems}
-            checkItems = {checkItems}
-            />
-
-            {
-              isWin && (
-                <Modal>
-                  <h3 className="modal-caption">Победа!</h3>
-                  <p className="modal-description">Вы собрали все пары за {stepsCount} шагов</p>
-                  <button className="button modal-button" onClick={handleBtnReset} type="button"> Еще раз</button>
-                </Modal>
-              )
-            }
-    
-          </main>
-          
-        </div>
-      )
+    <>
+      <Header />  
+      <div className='container'>
+        <main>
+          <div className="steps">Выполнено шагов: {stepsCount}</div>
+          <Grid
+            images={images}
+            finishedItems={finishedItems}
+            checkItems={checkItems}
+          />
+          {isWin && (
+            <Modal>
+              <h3 className="modal-caption">Победа!</h3>
+              <p className="modal-description">Вы собрались все пары за {stepsCount} шагов</p>
+              <button
+                className="button modal-button"
+                onClick={handleBtnReset}
+                type="button">Новая игра
+              </button>
+            </Modal>
+          )}
+        </main>
+      </div>
+    </>
+  )
 }

@@ -13,9 +13,7 @@ body,
   background-image: url(../public/img/background.png);
 }
 
-p {
-  background-color: rgba(61, 64, 255, 0.719);
-}
+
 
 
 @media (max-width:1200px) {

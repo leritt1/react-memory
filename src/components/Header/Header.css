@@ -14,6 +14,16 @@ header {
     gap: 20px;
 }
 
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.container header {
+    width: 100%;
+}
+
 a {
   color: white;
   text-decoration: none;
