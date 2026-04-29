@@ -14,8 +14,6 @@ body,
 }
 
 
-
-
 @media (max-width:1200px) {
   .grid {
     grid-template-columns: repeat(3, 250px);
