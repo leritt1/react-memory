@@ -13,12 +13,9 @@ export default function PageMain ()
                     <li>Правило 2</li>
                     <li>Правило 3</li>
                 </ol>
-                <Link to="/game">Начать игру</Link>
+                <Link to="/game" className="starsgame">Начать игру</Link>
             </main>
             
-            <footer>
-                <p>&copy; Гельрот Елизавета, 2026 г.</p>
-            </footer>
         </div>
     );
 }

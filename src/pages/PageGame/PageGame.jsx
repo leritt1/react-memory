@@ -43,9 +43,7 @@ export default function PageGame ()
             }
     
           </main>
-          <footer>
-            <p>&copy; Гельрот Елизавета, 2026 г.</p>
-          </footer>
+          
         </div>
       )
 }

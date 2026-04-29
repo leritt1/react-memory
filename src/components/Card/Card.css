@@ -42,3 +42,24 @@
 .card-finish {
     transform: rotateY(180deg);
 }
+
+@media (max-width:1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 250px);
+    gap: 40px;
+  }
+}
+
+@media (max-width:900px) {
+  .grid {
+    grid-template-columns: repeat(2, 250px);
+    gap: 30px;
+  }
+}
+@media (max-width:600px) {
+  .grid {
+    grid-template-columns: 250px;
+    gap: 30px;
+    padding: 0 15px;
+  }
+}
