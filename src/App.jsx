@@ -8,10 +8,12 @@ import Page404 from './pages/Page404/Page404'
 import PageImages from './pages/PageImages/PageImages'
 import List from './components/list'
 import Item from './components/Item'
+import './assets/style.css'
+
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/react-memory'  >
     <Routes>
       <Route path="/" element={<PageMain />} />
       <Route path='/game' element={<PageGame />} />
